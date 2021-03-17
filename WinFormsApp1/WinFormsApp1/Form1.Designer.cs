@@ -35,6 +35,7 @@ namespace WinFormsApp1
             this.label3 = new System.Windows.Forms.Label();
             this.txtusername = new System.Windows.Forms.TextBox();
             this.txtpassword = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -48,7 +49,7 @@ namespace WinFormsApp1
             // 
             // btnlogin
             // 
-            this.btnlogin.Location = new System.Drawing.Point(174, 214);
+            this.btnlogin.Location = new System.Drawing.Point(98, 214);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(111, 38);
             this.btnlogin.TabIndex = 1;
@@ -88,11 +89,22 @@ namespace WinFormsApp1
             this.txtpassword.Size = new System.Drawing.Size(174, 23);
             this.txtpassword.TabIndex = 5;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(244, 214);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(111, 38);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Thoát";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(443, 292);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtpassword);
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.label3);
@@ -114,6 +126,7 @@ namespace WinFormsApp1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtusername;
         private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.Button button1;
     }
 }
 

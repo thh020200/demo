@@ -29,5 +29,10 @@ namespace WinFormsApp1
                 MessageBox.Show("Sai tai khoan hoac mat khau");
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
