@@ -19,7 +19,14 @@ namespace WinFormsApp1
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
-               
+            string user = "admin";
+            string pass = "admin";
+            if (user.Equals(txtusername.Text) && pass.Equals(txtpassword.Text))
+            {
+                MessageBox.Show("Dang nhap thanh cong");
+            }
+            else
+                MessageBox.Show("Sai tai khoan hoac mat khau");
 
         }
     }
