@@ -23,10 +23,13 @@ namespace WinFormsApp1
             string pass = "admin";
             if (user.Equals(txtusername.Text) && pass.Equals(txtpassword.Text))
             {
-                MessageBox.Show("Dang nhap thanh cong");
+                MessageBox.Show("Đăng nhạp thành công!");
+                Form2 f2 = new Form2();
+                f2.ShowDialog();
+                this.Close();
             }
             else
-                MessageBox.Show("Sai tai khoan hoac mat khau");
+                MessageBox.Show("Đăng nhập thất bại!");
 
         }
 
